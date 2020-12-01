@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="UiLib Studio A great collection of UI elements for the web"/>
+    <meta name="author" content="Rishi Bajpai"/>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>UiLib Studio</title>
+
+    <!-- ============================ FontAwesome =================================== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ================== jquery Script ==================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body  id="blur" >
+    <div id="wrapper">
+
+        <!-- ========================= Canvas Slider ======================== -->
+        <div id="canvas">      
+
+            <!-- ====================== Site Navigation ========================= -->
+            
+            <div id="navbar">
+                <div id="logo">
+                    <a href="#"><img src="images/mobile yellow.png" alt=""></a>
+                </div>
+                <div id="nav">
+                    <ul id="nav-items">
+                        <li><a href="#"> Home <i class="fa fa-trophy"></i></a></li>
+                        <li><a href="#"> Library <i class="fa fa-tv"></i></a></li>
+                        <li><a href="#"> Articles <i class="fa fa-globe"></i></a></li>
+                        <li><a href="#"> About <i class="fa fa-globe"></i></a></li>
+                        <li><a class="login" href="#" onclick="toggleBlur()"> <i class="fa fa-user-circle"></i> Get in Touch </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mobile-nav">
+                <div class="logo">
+                    <a href="#"><img src="images/mobile yellow.png" alt=""></a>
+                </div>
+                <div id="nav-icon">
+                    <a href="#" class ="download">DOWNLOAD APP</a>
+                    <a href="#" class ="mobile-download"><i class="fa fa-download"></i> APP</a>
+                    <i class="fa fa-bars" style="color: #fff;" onclick="openNav()"></i>
+                    <!-- <a href="#" onclick="openNav()"><img src="images/menu.png" alt="mobile menu" style="width: 30px;"></a> -->
+                </div>
+                <div id="main-nav" class="sidenav">
+                    <div id="mobile-login">
+                        <img src="images/mobile yellow.png" alt="user-icon"><a href="#" onclick="toggleBlur()"></a>
+                    </div>
+                    <div class="submenu">
+                        <li><a href="index.html">Home <i class="fa fa-home"></i></a></li>
+                        <li><a href="#">Assets <i class="fa fa-download"></i></a></li>
+                        <li><a href="#">Components <i class="fa fa-code"></i></a></li>
+                        <li><a href="#">Resources <i class="fa fa-gift"></i></a></li>
+                        <li><a href="#">Articles <i class="fa fa-book"></i></a></li>
+                        <li><a href="#">Tutorials <i class="fa fa-graduation-cap"></i></a></li>
+                    </div>
+                    <div class="submenu">
+                        <li><a href="#"> About <i class="fa fa-lightbulb-o"></i></a></li>
+                        <li><a href="#"> Contact Us <i class="fa fa-envelope"></i></a></li>
+                        <li><a href="#"> FAQs <i class="fa fa-question-circle-o"></i></a></li>
+                        <li><a href="#"> Privacy Policy <i class="fa fa-unlock-alt"></i></a></li>
+                        <!-- <li><a href="#"> Team </a></li> -->
+                        <li>Not a member Yet? <a href="#" class="active"> SIGN UP !</a></li>
+                    </div>
+                    <div class="social">
+                        <span><a href="#"><i class="fa fa-facebook-square"></i> </a></span>
+                        <span><a href="#"><i class="fa fa-instagram"></i> </a></span>
+                        <span><a href="#"><i class="fa fa-youtube-play"></i> </a></span>
+                        <span><a href="#"><i class="fa fa-twitch"></i> </a></span> 
+                        <span><a href="#"><i class="fa fa-telegram"></i> </a></span>
+                    </div>
+                    
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">  &times;</a>
+                </div>
+            </div>
+
+            <div id="slider-data">
+
+                <h1 id="desc">a library of</h1>
+                <h2 id="slider"></h2>
+
+            </div>
+
+            <canvas>
+                <!-- Javascript canvas element -->
+            </canvas>
+
+        </div>
+            
+    </div>
+</body>
+
+    <script src="js/canvas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/script.js"></script>
+    
+</html>

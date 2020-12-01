@@ -1,0 +1,117 @@
+/* -------------------- Theme Variables ---------------------- */
+
+
+
+/* -------------------- Font Variables ----------------------- */
+
+
+
+/* --------------------- Layout Classes ----------------------- */
+.sp-bt{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sp-ar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sp-ev{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+body{
+    background: #000;
+}
+#wrapper{
+    color: #fff;
+}
+#elevated{
+    width: 55%;
+    height: 450px;
+    border-radius: 60px 60px 110px 60px;
+    float: right;
+    transform: rotateZ(32deg);
+    position: fixed;
+    top: -180px;
+    right: -50px;
+    background: linear-gradient(45deg, #000000, #00b3ff, #e41efa, #ff3650, #f83a00, #4d0049, #00ff37, #00ffaa, #00ff00, #000000);
+    background-size: 2000% 2000%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    /* border: 5px solid #0c0c0c;
+    box-shadow: 5px 5px 3px #0f0f0f, -5px 4px 2px #111; */
+}
+/* ============== background animation ============== */
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    25%{background-position: 50% 50%;}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#navigation{
+    position: relative;
+}
+#logo{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+#logo img{
+    width: 160px;
+    margin: 10px;
+}
+#nav{
+    margin: 30px;
+}
+#nav li{
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0px 30px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border: 2px solid transparent;
+}
+#nav li a:hover{
+    color: #000;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+#nav li:nth-child(1) a:hover, #nav li:nth-child(2) a:hover{
+    color: #ffdd00;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
