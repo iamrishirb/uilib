@@ -1,13 +1,11 @@
 var typed = new Typed('#slider', {
-    strings: ["UI Assets", "UI Components", "Website Templates", "Design Resources", "Web Design Components"],
-    typeSpeed: 50,
-    backSpeed: 0,
-    backDelay: 500,
-    startDelay: 1000,
+    strings: ["UI Components", "Website Templates", "UI Assets", "Design Resources", "Web Design Components"],
+    typeSpeed: 80,
+    backSpeed: 40,
+    showCursor: true,
+    loop: true,
     cursorChar: '_',
-    shuffle: true,
-    smartBackspace: false,
-    loop: true
+    backDelay: 1000
 });
 
 

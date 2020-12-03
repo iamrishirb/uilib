@@ -1,6 +1,6 @@
 var canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
-canvas.height = (window.innerHeight/10)*8;
+// canvas.height = (window.innerHeight/10)*8;
 // canvas.height = window.innerHeight;
 //grabbing an element as context to draw in canvas
 
@@ -14,8 +14,11 @@ var maxRadius = 30;
 var minRadius = 3;
 
 var colorArray = [
-    '#ffd000',
-    '#4caf60'
+    '#4caf60',
+    '#6a1b9a',
+    '#ff5722',
+    '#00b3ff',
+    '#e91e63'
 ];
 
 // onmousemove event for interaction
@@ -23,13 +26,12 @@ window.addEventListener('mousemove',
     function(event){
         mouse.x = event.x;
         mouse.y = event.y;
-        //console.log(mouse);
 });
 
 
 window.addEventListener('resize', function(){
     canvas.width = window.innerWidth;
-    canvas.height = (window.innerHeight/10)*8;
+    // canvas.height = (window.innerHeight/10)*8;
     init();
 });
 
@@ -37,7 +39,6 @@ window.addEventListener('resize', function(){
 
 
 //creating a fuction to create circles
-
 function Circle(x,y,dx,dy,radius){
     this.x = x;
     this.y = y;
@@ -114,8 +115,8 @@ function Circle(x,y,dx,dy,radius){
 
     function init(){
         circleArray = [];
-        for(var i=0; i<100; i++){
-            var radius = Math.random() * 3 + 1;
+        for(var i=0; i<50; i++){
+            var radius = Math.random() * 5 + 2;
             var x = Math.random() * (innerWidth - radius * 2) + radius;
             var y = Math.random() * (innerHeight - radius * 2) + radius;
             var dx = (Math.random() - 0.3)*2;
