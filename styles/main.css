@@ -273,7 +273,7 @@ canvas{
     width: fit-content;
     text-align: left;
     font-family: var(--space);
-    font-size: 4em;
+    font-size: 4.5em;
     padding: 10px;
     margin: 10px 0px;
     font-weight: 700;
@@ -373,9 +373,9 @@ canvas{
 .floaters:nth-child(7){
     top: 50%;
     left: 10%;
-    -webkit-animation: raiseMidFromLeft 3s infinite;
-    -moz-animation: raiseMidFromLeft 3s infinite;
-    animation: raiseMidFromLeft 3s infinite;
+    -webkit-animation: raiseMidFromLeft 7s infinite;
+    -moz-animation: raiseMidFromLeft 7s infinite;
+    animation: raiseMidFromLeft 7s infinite;
 }
 .floaters:nth-child(8){
     top: 70%;
@@ -387,9 +387,9 @@ canvas{
 .floaters:nth-child(9){
     top: 90%;
     left: 10%;
-    -webkit-animation: raiseBottomFromLeft 8s infinite;
-    -moz-animation: raiseBottomFromLeft 8s infinite;
-    animation: raiseBottomFromLeft 8s infinite;
+    -webkit-animation: raiseBottomFromLeft 6s infinite;
+    -moz-animation: raiseBottomFromLeft 6s infinite;
+    animation: raiseBottomFromLeft 6s infinite;
 }
 .floaters:nth-child(10){
     top: 90%;
@@ -767,7 +767,7 @@ canvas{
     .hero-text{
         width: 100%;
         font-weight: 400;
-        font-size: 0.8em;
+        font-size: 1em;
         letter-spacing: 0.05em;
         line-height: 1.8em;
         text-align: left;
