@@ -30,6 +30,7 @@ audio{
 
     /* Layout variables */
     --canvasHeight: 550px;
+    --documentWidth: 100%;
 
 }
 
@@ -273,16 +274,17 @@ canvas{
     width: fit-content;
     text-align: left;
     font-family: var(--space);
-    font-size: 4.5em;
+    font-size: 6em;
+    /* -webkit-text-stroke: 1px transparent; */
     padding: 10px;
     margin: 10px 0px;
     font-weight: 700;
     background: linear-gradient(45deg,  #00b3ff, #e41efa, #ff3650, #f83a00, #ffd000, #27f353, #00ffaa, #4d0049);
     background-size: 1000% 1000%;
-    -webkit-animation: ChangeGradient 10s ease infinite;
-    -moz-animation: ChangeGradient 10s ease infinite;
-    -o-animation: ChangeGradient 10s ease infinite;
-    animation: ChangeGradient 10s ease infinite;
+    -webkit-animation: ChangeGradient 7s ease infinite;
+    -moz-animation: ChangeGradient 7s ease infinite;
+    -o-animation: ChangeGradient 7s ease infinite;
+    animation: ChangeGradient 7s ease infinite;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -490,6 +492,67 @@ canvas{
     font-weight: 400;
     background: var(--background);
 }
+.hero-message span{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+#mobile{
+    display: none;
+    visibility: hidden;
+}
+.info-sections{
+    margin: 5%;
+    background: var(--foreground);
+    padding: 30px 0px;
+    border-radius: 50px;
+}
+.section{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+}
+lottie-player{
+    width: 250px;
+    height: 250px;
+    background: #666;
+    border-radius: 50%;
+}
+.content{
+    padding: 10px 0px;
+}
+.info-sections .head{
+    width: 80%;
+    margin: 5% 10%;
+    background-image: url('../images/luster.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    font-family: var(--yatra);
+}
+.section-head{
+    font-family: var(--poppins);
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin: 0em;
+    text-shadow: 2px 5px 10px #000;
+}
+.section-text{
+    color: var(--white);
+    font-family: var(--quicksand);
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
 
 
 /* ======================== styles for large screen tablet devices ======================== */
@@ -690,7 +753,56 @@ canvas{
     .highlight{
         padding: 3px 5px;
     }
+    #pc{
+        display: none;
+        visibility: hidden;
+    }
+    #mobile{
+        visibility: visible;
+        display: block;
+    }
+    .section{
+        width: 90%;
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .section lottie-player{
+        width: 200px;
+        height: 200px;
+    }
+    .content{
+        padding: 10px 0px;
+    }
+    .info-sections .head{
+        width: 80%;
+        margin: 10%;
+        font-size: 2.5em;
+        letter-spacing: 0.1em;
+    }
+    .section-head{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .section-text{
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
 
+}
+
+@media only screen and (max-width:1000px){
+    #slider-data{
+        margin-top: 150px;
+    }
+    #slider{
+        font-size: 5.5em;
+        text-align: left;
+        font-weight: 700;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -699,7 +811,7 @@ canvas{
         margin-top: 150px;
     }
     #slider{
-        font-size: 2.8em;
+        font-size: 5em;
         text-align: left;
         font-weight: 700;
     }
@@ -759,7 +871,7 @@ canvas{
         margin-top: 150px;
     }
     #slider{
-        font-size: 2.5em;
+        font-size: 3.2em;
     }
     #desc{
         font-size: 01.2em;
@@ -779,6 +891,33 @@ canvas{
     }
     .highlight{
         padding: 3px 5px;
+    }
+    .info-sections{
+        width: 100%;
+        margin: 10% 0%;
+    }
+    .section lottie-player{
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+    .content{
+        padding: 0px;
+    }
+    .info-sections .head{
+        width: 90%;
+        margin: 10% 5%;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+    }
+    .section-head{
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .section-text{
+        width: 90%;
+        font-size: 1em;
+        line-height: 1.6em;
     }
 }
 
@@ -811,6 +950,23 @@ canvas{
     .logo a {
         font-size: 1.2em;
     }
+    #slider{
+        font-size: 3em;
+    }
+    .section lottie-player{
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+    }
+    .info-sections .head{
+        font-size: 2em;
+        letter-spacing: 0.1em;
+    }
+    .section-head{
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
 }
 
 

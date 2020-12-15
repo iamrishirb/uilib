@@ -1,6 +1,6 @@
 var typed = new Typed('#slider', {
-    strings: ["UI Components", "Website Templates", "UI Assets", "Design Resources", "Web Design Components"],
-    typeSpeed: 80,
+    strings: ["UI Components", "Website Templates", "UI Assets", "Design Resources", "UI Snippets"],
+    typeSpeed: 100,
     backSpeed: 40,
     showCursor: true,
     loop: true,
@@ -37,3 +37,7 @@ $(window).on("scroll", function() {
             $('#navigation').removeClass('black');
         }
 });
+
+ScrollReveal().reveal('.lottiefile');
+ScrollReveal().reveal('.section-head', { delay: 500 });
+ScrollReveal().reveal('.section-text', { delay: 500 });
