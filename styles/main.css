@@ -1104,6 +1104,7 @@ lottie-player{
     }
     .dp_item{
         height: 250px;
+        background-size: contain;
     }
     .dp-content h2 {
         font-size: 3em;
