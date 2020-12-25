@@ -9,6 +9,7 @@
          url('../assets/fonts/fontsfree-net-bulgarie-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* sometimes */
@@ -18,7 +19,7 @@
          url('../assets/fonts/sometimes-51amx-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 audio{
@@ -46,8 +47,8 @@ audio{
     --sen : 'Sen', sans-serif;
     --space : 'Space Mono', monospace;
     --yatra : 'Yatra One', cursive;
-    --sometimes: 'sometimesregular';
-    --bulgarie: 'bulgarieregular';
+    --sometimes: 'sometimesregular', cursive;
+    --bulgarie: 'bulgarieregular', cursive;
 
     /* Layout variables */
     --canvasHeight: 550px;
@@ -212,6 +213,7 @@ canvas{
 }
 .logo img {
     width: 160px;
+    height: auto;
     margin: 10px;
 }
 
@@ -222,10 +224,8 @@ canvas{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* background: #141414; */
     width: 100%;
     max-width: 100%;
-    /* box-shadow: 0px 5px 10px #000; */
     z-index: 99;
 }
 #logo a{
@@ -233,7 +233,7 @@ canvas{
 }
 #logo a img{
     width: 160px;
-    /* margin: 20px 0px 0px 30px; */
+    height: auto;
     margin: 10px;
 }
 #nav{
@@ -282,6 +282,10 @@ canvas{
 #mobile-nav{
     display: none;
 }
+.displayNone{
+    display: none;
+    visibility: hidden;
+}
 
 /* ================ slider styles ================= */
 
@@ -296,7 +300,6 @@ canvas{
     text-align: left;
     font-family: var(--space);
     font-size: 6em;
-    /* -webkit-text-stroke: 1px transparent; */
     padding: 10px;
     margin: 10px 0px;
     font-weight: 700;
@@ -491,7 +494,7 @@ canvas{
 .hero-text{
     width: 80%;
     text-align: left;
-    color: #fff;
+    color: #bbbbbb;
     font-family: var(--poppins);
     margin: 0px 10px;
     font-weight: 400;
@@ -509,7 +512,7 @@ canvas{
 }
 .hero-message{
     font-family: var(--space);
-    color: var(--white);
+    color: #eee;
     font-size: 1.5em;
     font-weight: 400;
     background: var(--background);
@@ -539,8 +542,6 @@ canvas{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    /* flex-wrap: wrap;
-    flex-direction: column; */
 }
 lottie-player{
     width: 250px;
@@ -553,13 +554,13 @@ lottie-player{
 .info-sections .head{
     width: 80%;
     margin: 5% 10%;
-    background-image: url('../images/luster.jpg');
+    background: linear-gradient(45deg, #ff0040, #f82500, #ffd000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3.5em;
     letter-spacing: 0.1em;
-    font-family: var(--quicksand);
+    font-family: var(--bulgarie);
 }
 .section-head{
     font-family: var(--bulgarie);
@@ -570,10 +571,11 @@ lottie-player{
     text-shadow: 2px 4px 5px #000;
 }
 .section-text{
-    color: var(--white);
+    color: #999;
     font-family: var(--quicksand);
     font-size: 1.2em;
     line-height: 1.6em;
+    letter-spacing: 0.05em;
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -591,6 +593,7 @@ lottie-player{
 }
 .left img{
     height: 450px;
+    width: auto;
     margin-left: 40px;
     transform: rotateZ(-2deg);
     animation: moveup 4s ease-out infinite forwards;
@@ -598,13 +601,12 @@ lottie-player{
 #girlshadow{
     display: block;
     height: 160px;
-    width: 420px;
+    width: 380px;
     border-radius: 50%;
     background: #000;
     margin-top: -110px;
     box-shadow: 5px 10px 20px #000,
                 -2px -2px 10px #222222b5;
-    /* animation: moveahead 5s ease-out 0.5s infinite forwards; */
 }
 .right{
     width: 70%;
@@ -750,80 +752,6 @@ lottie-player{
     cursor: pointer;
 }
 
-
-.glass{
-    width: 100%;
-    height: 300px;
-    background: rgba( 0, 0, 0, 0.35 );
-    box-shadow: -10px -10px 20px #111,
-                5px 5px 20px #000;
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border-radius: 60px;
-    border: 1px solid #111;
-}
-.card-carousel{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 10px 50px;
-    padding: 25px;
-}
-.card{
-    height: 220px;
-    width: 220px;
-    margin: 15px;
-    border-radius: 30px;
-    /* border: 1px solid #111; */
-}
-.card img{
-    height: 220px;
-    width: 220px;
-    border-radius: 40px;
-}
-.card{
-    /* background-image: linear-gradient(-75deg, #ff365152, #00000098), url('../assets/ezgif-4-5a2740a9a2de.gif'); */
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: -5px -5px 10px rgb(85, 85, 85),
-                10px 10px 10px #000;
-}
-
-#one{
-    background: var(--red);
-}
-#two{
-    background: var(--violet);
-}
-#three{
-    background: var(--yellow);
-}
-#four{
-    background: var(--sky);
-}
-#five{
-    background: var(--orange);
-}
-#six{
-    background: var(--green);
-}
-#seven{
-    background: var(--pink);
-}
-/* #eight{
-
-}
-#nine{
-
-}
-#ten{
-
-} */
-
-
 @media only screen and (max-width:1000px){
     #slider-data{
         margin-top: 150px;
@@ -865,6 +793,7 @@ lottie-player{
     }
     .logo a img{
         width: 140px;
+        height: auto;
     }
     #main-nav {
         position: absolute;
@@ -1081,6 +1010,7 @@ lottie-player{
     #girl{
         margin-left: 0px;
         height: 280px;
+        width: auto;
     }
     #girlshadow {
         height: 100px;
@@ -1147,6 +1077,7 @@ lottie-player{
     #girl{
         margin-left: 0px;
         height: 240px;
+        width: auto;
     }
     #girlshadow {
         height: 90px;
@@ -1191,6 +1122,7 @@ lottie-player{
     }
     #girl{
         height: 180px;
+        width: auto;
         margin-left: 20px;
     }
     #girlshadow{
@@ -1238,6 +1170,7 @@ lottie-player{
     }
     .logo a img{
         width: 120px;
+        height: auto;
     }
     #nav-icon{
         margin: 15px;
@@ -1329,6 +1262,7 @@ lottie-player{
     }
     #girl{
         height: 230px;
+        width: auto;
         display: block;
         animation: moveahead 5s ease-out 0.5s infinite forwards;
     }
@@ -1350,7 +1284,7 @@ lottie-player{
         margin: 0px;
     }
     .stackhead{
-        font-family: var(--yatra);
+        font-family: var(--quicksand);
         font-size: 1.2em;
         font-weight: normal;
     }
@@ -1393,6 +1327,7 @@ lottie-player{
     }
     .logo a img{
         width: 110px;
+        height: auto;
     }
     #nav ul li:nth-child(5){
         padding-bottom: 10px;
@@ -1473,19 +1408,6 @@ lottie-player{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-}
-
-
-
-
-/* keyframes */
-@keyframes navigate{
-    o%{
-        transform: translateY(0px) rotateZ(0deg) scale(1)
-    }
-    100%{
-        transform: translateY(30px) rotateZ(-7deg) scale(1.05)
-    }
 }
 
 @-webkit-keyframes ChangeGradient {
