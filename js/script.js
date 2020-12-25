@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var typed = new Typed('#slider', {
   strings: ["UI Components", "Website Templates", "UI Assets", "Design Resources", "UI Snippets"],
   typeSpeed: 100,
@@ -95,7 +94,6 @@ $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
   });
 
   detect_active();
-=======
 var typed = new Typed('#slider', {
   strings: ["UI Components", "Website Templates", "UI Assets", "Design Resources", "UI Snippets"],
   typeSpeed: 100,
@@ -192,5 +190,4 @@ $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
   });
 
   detect_active();
->>>>>>> 3b0c17392dd454833124762f593beeb48ecc00f8
 });
