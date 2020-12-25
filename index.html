@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#ffd000">
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#ffd000">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#ffd000">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffd000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="UiLib Studio A great collection of UI elements for the web"/>
     <meta name="author" content="Rishi Bajpai"/>
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.webp">
     <title>UiLib Studio</title>
 
     <!-- ============================ FontAwesome =================================== -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" media="screen" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen"></noscript>
 
-    <!-- ================== jquery Script ==================== -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-
-    <!-- Scrollreveal JS -->
-    <script src="js/scrollreveal.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="styles/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/slick.css"/> -->
     <!-- <link rel="stylesheet" type="text/css" href="styles/slick-theme.css"/> -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preload" href="styles/main.css" as="style" media="screen" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/main.css" media="screen"></noscript>
 
 </head>
 <body  id="blur" >
@@ -42,7 +38,7 @@
             <!-- ====================== Site Navigation ========================= -->
             <div id="navbar">
                 <div id="logo">
-                    <a href="#"><img src="images/mobile yellow.png" alt=""></a>
+                    <a href="#"><img src="images/mobile yellow.webp" alt=""></a>
                 </div>
                 <div id="nav">
                     <ul id="nav-items">
@@ -57,7 +53,7 @@
             </div>
             <div id="mobile-nav">
                 <div class="logo">
-                    <a href="#"><img src="images/mobile yellow.png" alt=""></a>
+                    <a href="#"><img src="images/mobile yellow.webp" alt=""></a>
                 </div>
                 <div id="nav-icon">
                     <a href="tel:+91 7607173962" class ="download"><i class="fa fa-phone"></i> Talk to Us</a>
@@ -67,7 +63,7 @@
                 </div>
                 <div id="main-nav" class="sidenav">
                     <div id="mobile-login">
-                        <img src="images/mobile yellow.png" alt="user-icon"><a href="#" onclick="toggleBlur()"></a>
+                        <img data-src="images/mobile yellow.webp" class="lazyload" alt="user-icon"><a href="#" onclick="toggleBlur()"></a>
                     </div>
                     <div class="submenu">
                         <li><a href="index.html">Home <i class="fa fa-home"></i></a></li>
@@ -110,25 +106,25 @@
         <!-- ========================= Document Body ========================= -->
         <div id="floating-bg">
             <div id="floaters">
-                <img src="images/floaters/052-minimize.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/076-add.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/ui-design.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/012-yin-yang.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/084-hdr.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/044-salt.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/designer.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/ui-design (2).svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/048-pentagon.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/088-hdr-1.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/023-connections.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/059-select-1.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/081-center-of-gravity.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/023-connections.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/041-star.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/079-selection-1.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/066-copyright-1.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/068-more.svg" class="floaters" alt="floaters images">
-                <img src="images/floaters/062-crop.svg" class="floaters" alt="floaters images">
+                <img src="images/floaters/052-minimize.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/076-add.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/ui-design.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/012-yin-yang.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/084-hdr.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/044-salt.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/designer.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/ui-design (2).webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/048-pentagon.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/088-hdr-1.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/023-connections.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/059-select-1.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/081-center-of-gravity.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/023-connections.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/041-star.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/079-selection-1.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/066-copyright-1.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/068-more.webp" class="floaters" alt="floaters images">
+                <img src="images/floaters/062-crop.webp" class="floaters" alt="floaters images">
             </div>
 
             <!-- here starts the container -->
@@ -150,9 +146,9 @@
                     <h2 class="head">Explore Uilib's design library for</h2>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8msozocb.json"
+                            <lottie-player class="lazyload" rel="preload" src="https://assets9.lottiefiles.com/packages/lf20_8msozocb.json"
                                             speed="1.5"
-                                            style="background: linear-gradient(315deg,#000000, #00ffaad2);" loop  autoplay></lottie-player>
+                                            style="background: linear-gradient(315deg,#000000, #00ffaad2);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #00e676;">best design resources and articles</h3>
@@ -173,12 +169,12 @@
                             </p>
                         </div>
                         <div class="lottiefile">
-                            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ZxdiLh.json"  speed="1.5"  style="background: linear-gradient(-315deg,#000000,  #ff3c00);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets10.lottiefiles.com/packages/lf20_ZxdiLh.json"  speed="1.5"  style="background: linear-gradient(-315deg,#000000,  #ff3c00);" loop  autoplay async></lottie-player>
                         </div>
                     </div>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_eLTtxq.json"  speed="1.5"  style="background: linear-gradient(-230deg,  #099bda, #3a0037);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets4.lottiefiles.com/packages/lf20_eLTtxq.json"  speed="1.5"  style="background: linear-gradient(-230deg,  #099bda, #3a0037);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #00e5ff;">beautifully crafted web components</h3>
@@ -199,12 +195,12 @@
                             </p>
                         </div>
                         <div class="lottiefile">
-                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_eTM2vQ.json"  speed="1.5"  style="background: linear-gradient(-75deg, #ff3650, #000000);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets9.lottiefiles.com/packages/lf20_eTM2vQ.json"  speed="1.5"  style="background: linear-gradient(-75deg, #ff3650, #000000);" loop  autoplay async></lottie-player>
                         </div>
                     </div>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_xsnsvpbs.json"  speed="1.5"  style="background: linear-gradient(45deg,  #7e008b, #080008);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets2.lottiefiles.com/packages/lf20_xsnsvpbs.json"  speed="1.5"  style="background: linear-gradient(45deg,  #7e008b, #080008);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #c900fc;">free templates and code samples</h3>
@@ -222,9 +218,9 @@
                     <h2 class="head">Explore Uilib's design library for</h2>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_8msozocb.json"
+                            <lottie-player class="lazyload" rel="preload" src="https://assets9.lottiefiles.com/packages/lf20_8msozocb.json"
                                             speed="1.5"
-                                            style="background: linear-gradient(315deg,#000000, #00ffaad2);" loop  autoplay></lottie-player>
+                                            style="background: linear-gradient(315deg,#000000, #00ffaad2);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #00ff84;">best design resources and articles</h3>
@@ -237,7 +233,7 @@
                     </div>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ZxdiLh.json"  speed="1.5"  style="background: linear-gradient(-315deg,#000000,  #ff3c00);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets10.lottiefiles.com/packages/lf20_ZxdiLh.json"  speed="1.5"  style="background: linear-gradient(-315deg,#000000,  #ff3c00);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #ff3c00;">a rich collection of UI Assets</h3>
@@ -250,7 +246,7 @@
                     </div>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_eLTtxq.json"  speed="1.5"  style="background: linear-gradient(-230deg,  #099bda, #3a0037);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets4.lottiefiles.com/packages/lf20_eLTtxq.json"  speed="1.5"  style="background: linear-gradient(-230deg,  #099bda, #3a0037);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #00e5ff;">beautifully crafted web components</h3>
@@ -263,7 +259,7 @@
                     </div>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_eTM2vQ.json"  speed="1.5"  style="background: linear-gradient(-75deg, #ff3650, #000000);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets9.lottiefiles.com/packages/lf20_eTM2vQ.json"  speed="1.5"  style="background: linear-gradient(-75deg, #ff3650, #000000);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #ff0055;">best tutorials on front-end topics</h3>
@@ -276,7 +272,7 @@
                     </div>
                     <div class="section">
                         <div class="lottiefile">
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_xsnsvpbs.json"  speed="1.5"  style="background: linear-gradient(45deg,  #7e008b, #080008);" loop  autoplay></lottie-player>
+                            <lottie-player class="lazyload" rel="preload" src="https://assets2.lottiefiles.com/packages/lf20_xsnsvpbs.json"  speed="1.5"  style="background: linear-gradient(45deg,  #7e008b, #080008);" loop  autoplay async></lottie-player>
                         </div>
                         <div class="content">
                             <h3 class="section-head" style="color: #d21fff;">free templates and code samples</h3>
@@ -295,7 +291,7 @@
                     <!-- stacked section -->
                     <div class="stacked-section">
                         <div class="left">
-                            <img src="images/girl3d.png" id="girl" alt="girl with pencil">
+                            <img data-src="images/girl3d.webp" class="lazyload" id="girl" alt="girl with pencil">
                             <div id="girlshadow"></div>
                         </div>
                         <div class="right">
@@ -305,29 +301,29 @@
                                 <div id="stacked-slider">
                                     <div class="dp-wrap">
                                         <div id="dp-slider">
-                        
-                                            <div class="dp_item" style=" background-image: linear-gradient(to top, #26003b, rgba(0, 0, 0, 0.4)), url('images/templates.png');" data-class="1" data-position="1">
+                         
+                                            <div class="dp_item lazyload" style=" background-image: linear-gradient(to top, #26003b, rgba(0, 0, 0, 0.4)), url('images/templates.webp');" data-class="1" data-position="1">
                                                 <div class="dp-content">
                                                     <h2><br> Website Templates</h2>
                                                     <!-- <p> Get premade beautiful templates and contact for customisation </p> -->
                                                 </div>
                                             </div>
                         
-                                            <div class="dp_item" style=" background-image: linear-gradient(to top, #ff0037, rgba(0, 0, 0, 0.2)), url('images/snippets.png');" data-class="2" data-position="2">
+                                            <div class="dp_item lazyload" style=" background-image: linear-gradient(to top, #ff0037, rgba(0, 0, 0, 0.2)), url('images/snippets.webp');" data-class="2" data-position="2">
                                                 <div class="dp-content">
                                                     <h2><br> UI Snippets</h2>
                                                     <!-- <p> A rich collection of UI snippets like cards, panels, gradients etc.</p> -->
                                                 </div>
                                             </div>
                         
-                                            <div class="dp_item" style=" background-image: linear-gradient(#ffa60000, rgb(0, 0, 0)), url('images/articles.jpg');" data-class="3" data-position="3">
+                                            <div class="dp_item lazyload" style=" background-image: linear-gradient(#ffa60000, rgb(0, 0, 0)), url('images/articles.webp');" data-class="3" data-position="3">
                                                 <div class="dp-content">
                                                     <h2><br> Design Articles</h2>
                                                     <!-- <p> Beautifully crafted articles to explain the latest design trends </p> -->
                                                 </div>
                                             </div>
                         
-                                            <div class="dp_item" style=" background-image: linear-gradient(to top, #00ff62 , rgba(0, 0, 0, 0)), url('images/tutorial.PNG');" data-class="4" data-position="4">
+                                            <div class="dp_item lazyload" style=" background-image: linear-gradient(to top, #00ff62 , rgba(0, 0, 0, 0)), url('images/tutorial.webp');" data-class="4" data-position="4">
                                                 <div class="dp-content">
                                                     <h2><br> Design Tutorials</h2>
                                                     <!-- <p> Tutorial series on various topics like Canvas, WebGL, threejs etc. </p> -->
@@ -381,35 +377,22 @@
                         </div>
                     </div>
 
-                    <!-- elements carousel -->
-                    <!-- <div class="glass">
-                        <div class="card-carousel">
-                            <div class="card" id="one"></div>
-                            <div class="card" id="two"></div>
-                            <div class="card" id="three"></div>
-                            <div class="card" id="four"></div>
-                            <div class="card" id="five"></div>
-                            <div class="card" id="six"></div>
-                            <div class="card" id="seven"></div>
-                            <div class="card" id="eight"></div>
-                            <div class="card" id="nine"></div>
-                            <div class="card" id="ten"></div>
-                        </div>
-                    </div> -->
-
                 </div>
 
             </div>
         </div>
 
     </div>
-</body>
 
-    <script src="js/canvas.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/lottie-player.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/canvas.min.js" async></script>
+    <script src="js/typed.min.js" async></script>
+    <script src="js/scrollreveal.min.js" async></script>
+    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
+    <script src="js/lazysizes.min.js" async></script>
+    <script src="js/lottie-player.min.js" async></script>
+    <script src="js/script.js" async></script>
+
+</body>
 
 </html>
