@@ -20,9 +20,8 @@ audio{
     /* Font variables */
     --poppins: 'Poppins', sans-serif;
     --quicksand: 'Quicksand', sans-serif;
-    --sen : 'Sen', sans-serif;
     --space : 'Space Mono', monospace;
-    --yatra : 'Yatra One', cursive;
+    --clicker: 'Clicker Script', cursive;
     --sometimes: 'sometimesregular', cursive;
     --bulgarie: 'bulgarieregular', cursive;
 
@@ -77,16 +76,8 @@ h2{
 h3{
     font-family: 'Sen', sans-serif;
 }
-.para{
-    font-family: var(--yatra);
-    font-size: 1.2em;
-    line-height: 1.6em;
-}
 .space{
     font-family: var(--space);
-}
-.yatra{
-    font-family: var(--yatra);
 }
 
 /* -------------------- Alignment Styles ----------------------- */
@@ -226,7 +217,7 @@ canvas{
     letter-spacing: 0.2em;
     font-weight: 400;
     font-size: 1.1em;
-    font-family: var(--yatra);
+    font-family: var(--poppins);
 }
 #nav-items li a i{
     display: none;
@@ -297,9 +288,9 @@ canvas{
     border-left: 6px solid #ffd000;
     text-align: left;
     letter-spacing: 0.2em;
-    font-family: var(--sen);
+    font-family: var(--poppins);
     margin: 0px 10px;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 50px;
 }
 #slider:after{
@@ -654,8 +645,8 @@ lottie-player{
         padding: 10px;
         border: none;
         border-bottom: 1px solid rgb(167, 136, 0);
-        font-family: var(--yatra);
-        font-size: 1.3em;
+        font-family: var(--poppins);
+        font-size: 1.2em;
     }
     .mobile-nav-bottom{
         width: 100%;
@@ -806,7 +797,7 @@ lottie-player{
         font-weight: 700;
         letter-spacing: 0.1rem;
         background: rgb(255, 208, 0);
-        font-family: var(--yatra);
+        font-family: var(--space);
         text-decoration: none;
     }
     .download:hover{
