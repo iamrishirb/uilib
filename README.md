@@ -15,7 +15,7 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 ### 1. Fork the repo :fork_and_knife:
 
-You can get your own fork/copy of <a href="https://github.com/devclub-biet-jhansi/binary-search-visualisation"> Binary search Visualisation </a> by using the <kbd><b>Fork</b></kbd> button at top-right of your screen.
+You can get your own fork/copy of <a href="https://github.com/iamrishirb/uilib.git"> UILib </a> by using the <kbd><b>Fork</b></kbd> button at top-right of your screen.
 
 
 ### 2. Clone it to your local machine :busts_in_silhouette:
@@ -25,16 +25,16 @@ You can get your own fork/copy of <a href="https://github.com/devclub-biet-jhans
 You need to clone (download) it to local machine using
 
 ```sh
-$ git clone https://github.com/devclub-biet-jhansi/binary-search-visualisation.git
+$ git clone https://github.com/iamrishirb/uilib.git
 ```
 
 > This makes a local copy of the repository in your machine.
 
-Once you have cloned the `binary-search-visualisation` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
+Once you have cloned the `uilib` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
 
 ```sh
-# This will change directory to a folder binary-search-visualisation
-$ cd binary-search-visualisation
+# This will change directory to a folder uilib
+$ cd uilib
 ```
 
 Move to this folder for all other commands.
@@ -83,7 +83,7 @@ $ git push -u origin BranchName
 Finally, go to your repository in the browser and click on `compare and pull requests`.
 Then add a title and description to your pull request that explains your precious effort.
 
- Always feel free to drop a comment or create an issue if you find something missing. Our excellent contributors will always get it done.
+Always feel free to drop a comment or create an issue if you find something missing. Our excellent contributors will always get it done.
  
- Happy Coding 🎉🎉
+Happy Hacking! 🎉🎉
 
