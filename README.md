@@ -1,7 +1,6 @@
 # uilib
 
-To visualize the concept of Binary Search Algorithm used in data Structures using various front-end languages used in Web Technologies
-We will be explaining this with the help of Step - by - Step tracking of algorithm.
+UiLib is created with an aim to provide a rich library of all kind of UI Assets, Components for web design, and useful design resources all at one place. You must be thinking "I can use Bootstrap / Materialize" or purchase a UI kit if I need. Yes, you can do any of them!
 
 
 Check ``CONTRIBUTING.md`` for contributing guidelines
