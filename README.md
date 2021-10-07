@@ -2,8 +2,7 @@
 
 UiLib is created with an aim to provide a rich library of all kind of UI Assets, Components for web design, and useful design resources all at one place. You must be thinking "I can use Bootstrap / Materialize" or purchase a UI kit if I need. Yes, you can do any of them!
 
-
-Check ``CONTRIBUTING.md`` for contributing guidelines
+Check `CONTRIBUTING.md` for contributing guidelines
 
 ## Steps to follow to start Contributing :scroll:
 
@@ -11,11 +10,9 @@ Check ``CONTRIBUTING.md`` for contributing guidelines
 
 Star the repo by pressing the topmost-right button to start your wonderful journey.
 
-
 ### 1. Fork the repo :fork_and_knife:
 
 You can get your own fork/copy of <a href="https://github.com/iamrishirb/uilib.git"> UILib </a> by using the <kbd><b>Fork</b></kbd> button at top-right of your screen.
-
 
 ### 2. Clone it to your local machine :busts_in_silhouette:
 
@@ -24,7 +21,7 @@ You can get your own fork/copy of <a href="https://github.com/iamrishirb/uilib.g
 You need to clone (download) it to local machine using
 
 ```sh
-$ git clone https://github.com/iamrishirb/uilib.git
+$ git clone https://github.com/<YourGitUserName>/uilib.git
 ```
 
 > This makes a local copy of the repository in your machine.
@@ -83,6 +80,5 @@ Finally, go to your repository in the browser and click on `compare and pull req
 Then add a title and description to your pull request that explains your precious effort.
 
 Always feel free to drop a comment or create an issue if you find something missing. Our excellent contributors will always get it done.
- 
-Happy Hacking! 🎉🎉
 
+Happy Hacking! 🎉🎉
